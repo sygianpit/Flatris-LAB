@@ -17,7 +17,7 @@ steps:
 
 - script: |
     npm cache clean --force
-    npm audit fix --force
     npm install
+    npm audit fix --force
     npm run build
   displayName: 'npm install and build'
