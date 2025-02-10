@@ -18,6 +18,7 @@ steps:
 - script: |
     npm cache clean --force
     npm install
+    npm audit --package-lock-only
     npm audit fix --force
     npm run build
   displayName: 'npm install and build'
